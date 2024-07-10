@@ -257,6 +257,7 @@ class PubMqtt {
             #else
             publish(subtopics[MQTT_IP_ADDR], WiFi.localIP().toString().c_str(), true);
             #endif
+            publish(subtopics[MQTT_SSID], WiFi.SSID().toString().c_str(), true);
             tickerMinute();
             publish(mLwtTopic.data(), mqttStr[MQTT_STR_LWT_CONN], true, false);
 
