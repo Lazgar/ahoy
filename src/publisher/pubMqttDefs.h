@@ -42,6 +42,7 @@ const char* const mqttStr[] PROGMEM = {
 enum {
     MQTT_UPTIME = 0,
     MQTT_RSSI,
+    MQTT_SSID,
     MQTT_FREE_HEAP,
     MQTT_HEAP_FRAG,
     MQTT_SUNRISE,
@@ -62,8 +63,9 @@ enum {
 const char* const subtopics[] PROGMEM = {
     "uptime",
     "wifi_rssi",
+    "wifi_ssid",
     "free_heap",
-	"heap_frag",
+    "heap_frag",
     "sunrise",
     "sunset",
     "comm_start",
